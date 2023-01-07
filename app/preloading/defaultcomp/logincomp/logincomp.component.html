@@ -1,0 +1,52 @@
+
+         <section class="h-100 gradient-form" style="background-image:url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YWJzdHJhY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');border-radius: 20px;">
+            <div class="container py-5" style="margin-left: 200px;">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                  <div class="card rounded-3 text-black" style="border-radius: 20px;">
+                    <div class="row g-0">
+                      <div class="col-lg-6">
+                        <div class="card-body p-md-5 mx-md-4">
+          
+                          <div class="text-center">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                              style="width: 185px;" alt="logo">
+                            <h2 class="mt-1 mb-5 pb-1">We are The Birla Finance Team</h2>
+                          </div>
+          
+                          <form [formGroup]="login" (ngSubmit)="loginMethod()">
+
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form2Example11" style="font-size: 17px;font-weight: 500;">Username : </label><br>
+                              <input type="text" id="form2Example11" class="form-control"
+                                placeholder="Enter Username" formControlName="username" />
+                              
+                            </div>
+          
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form2Example22"style="font-size: 17px;font-weight: 500;">Password : </label>
+                              <input type="password" id="form2Example22" class="form-control" placeholder="Enter Password" formControlName="password"/>
+                              
+                            </div>
+          
+                            <div class="text-center pt-1 mb-5 pb-1">
+                              <input class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" style="padding: 8px;border-radius: 20px;font-weight: 600;font-size: 20px;" type="submit" value="Login">
+                            </div>
+      
+                          </form>
+          
+                        </div>
+                      </div>
+                      <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                        <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                            <img src="https://pbs.twimg.com/media/DzWAzQcUUAAl00q.jpg" style="width: 340px;height: 220px;border-radius: 10px;" alt="logo">
+                          <br><br>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>

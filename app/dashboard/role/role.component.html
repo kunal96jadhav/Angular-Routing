@@ -1,0 +1,18 @@
+<div class="row w-100 p-3" style="background-color: rgb(98, 112, 233);">
+    <app-header></app-header>
+</div>
+
+<!-- now the Side bar having their respective roles according to Employee -->
+<div class="row w-100 ">
+    <!-- side bar is having only small section of page from left side -->
+   <div class="w-25 p-3" style="background-color: aqua;height:90ch;">
+       <!--now the role is assigning to the menu componant with help of selector  -->
+       <app-menu [userRole]="role"></app-menu>
+
+   </div>
+   <!-- rest section is for their child routing after clicking on individual role -->
+   <div class="w-75 p-2">
+          <!-- router outlet will route for given path -->
+        <router-outlet></router-outlet>
+   </div>
+   </div>

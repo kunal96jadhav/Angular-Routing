@@ -1,0 +1,143 @@
+#header img{
+    margin-top: 2px;
+    width: 120px;
+    height: 80px;
+    border-radius: 20px;
+
+}
+#header label{
+    color: rgb(20, 19, 20);
+    font-size: 40px;
+    margin-right: 510px;
+    font-weight: 900;
+    font-style: oblique;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 15px;
+}
+#header{
+    background-image: url('https://img.freepik.com/free-vector/simple-gradient-background-vector-winter-blue-pink_53876-105768.jpg?w=2000');
+    background-size:100%;   
+    background-repeat:no-repeat;
+    padding: 10px;
+    /* border-radius: 0px; */
+    text-shadow:5px 5px 2px rgb(242, 37, 10);
+}
+#header ul{
+    float: right;
+    list-style-type: none;
+    border-radius: none;
+}
+ /* #hover:hover{
+    background-color: aqua;
+    color: rgb(239, 8, 8);
+    border:none;
+    border-radius: 20px;
+  } */
+  
+  /* .nav{
+    padding-top: 18px;
+    padding-bottom: 1px;
+    border-radius: 20px;
+    background-color: rgb(8, 221, 221);
+  }
+  .nav.navigation{
+    float: right;
+    list-style-type: none;
+    border-radius: none;
+  }
+
+  #navbar:hover{
+    background-color: rgb(46, 233, 8);
+    color: rgb(239, 8, 8);
+    border:none;
+    border-radius: 20px;
+  } */
+  .spacer{
+    flex: 1 1 auto;
+  }
+
+  .pt{
+    width: 100%;
+  }
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #090909;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+} */
+
+/* General styles end */
+
+.button {
+    --color: #f74f0c;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    color: aqua;
+    padding: 2px 25px;
+    border: 2px solid var(--color);
+}
+
+.button::before,
+.button::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: inherit;
+    transition: width .25s .15s, height .25s;
+}
+
+.button::before {
+    top: -10px;
+    left: -10px;
+    border-width: 3px 0 0 3px;
+}
+
+.button::after {
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 3px 3px 0;
+}
+
+.button:hover::before,
+.button:hover::after {
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }

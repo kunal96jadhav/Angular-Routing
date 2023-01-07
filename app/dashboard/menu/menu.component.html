@@ -1,0 +1,13 @@
+<div class="p-3">
+    <!-- now to diplay all the Role as per employee we have to iterate the Array(0th index is object, after that index is role name that we mentioned in Menu classs)-->
+<div *ngFor="let menu of menus[0][userRole]">
+<div class="pt-2">
+    <!-- now we entered into the object of perticular role of an array of that Menu class -->
+    <!-- if Employee click on perticular label then it will route to the page with help of key that we are mentioned -->
+<!-- <a [routerLink]="menu.key">{{menu.label}}</a> -->
+  <ul>
+    <li><a [routerLink]="menu.key">{{menu.label}}</a></li>
+  </ul>
+</div>
+</div>
+</div>
